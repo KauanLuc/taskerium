@@ -1,12 +1,10 @@
 package kauanluc.taskerium;
 
-import io.github.cdimascio.dotenv.Dotenv;
 import kauanluc.taskerium.command.*;
 
 public class TaskeriumApplication {
     public static void main(String[] args) throws Exception {
-        Dotenv dotenv = Dotenv.load();
-        final String VERSION = dotenv.get("VERSION");
+        final String VERSION = "v1.0.0";
 
         if (args.length < 1 || args.length > 3) {
             System.out.println(
