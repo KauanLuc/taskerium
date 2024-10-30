@@ -11,7 +11,7 @@ import java.util.List;
 
 public class TaskMapper {
     private static final ObjectMapper MAPPER = new ObjectMapper();
-    private static final File FILE = new File("taskerium-tasks.json");
+    private static final File FILE = new File("/usr/share/taskerium/taskerium-tasks.json");
 
     static {
         MAPPER.registerModule(new JavaTimeModule());
